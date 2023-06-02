@@ -1,0 +1,11 @@
+<h1>Flats</h1>
+
+<ul>
+  <% @flats.each do |flat| %>
+    <li>
+      <h2>
+        <a href="/flats/<%= flat['id'] %>"><%= flat['name'] %></a>
+      </h2>
+    </li>
+  <% end %>
+</ul>
